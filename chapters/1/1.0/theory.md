@@ -145,7 +145,7 @@ drwxrwxr-x 3 nomike nomike  4096 Nov 24 22:56 chapters
 nomike@max:~/coding/nomikes_python_challenges$ 
 ```
 
-Notice the "0" next to our file? That's the filesize, measured in bytes.
+Notice the "0" next to the new file? That's the filesize, measured in bytes.
 
 ### Removing files
 
@@ -154,3 +154,5 @@ Files can be removed with the `rm` command:
 ```
 nomike@max:~/coding/nomikes_python_challenges$ rm bar
 ```
+
+Continue now with the exercise.
