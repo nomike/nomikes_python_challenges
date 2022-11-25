@@ -51,4 +51,4 @@ What do the options `-f`, `-i`, and `-I` do? Try them out!
 
 # Cleanup
 
-When you're done with this excercise, cleanup by deleting the `c1` folder with all of it's content.
+When you're done with this exercise, cleanup by deleting the `c1` folder with all of it's content.
