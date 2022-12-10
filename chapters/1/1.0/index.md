@@ -1,4 +1,22 @@
-# Basic shell usage
+- [Chapter 1.0 - Basic shell usage](#chapter-10---basic-shell-usage)
+  - [terminal](#terminal)
+  - [shell](#shell)
+    - [The prompt](#the-prompt)
+      - [nomike](#nomike)
+      - [max](#max)
+      - [~/coding/nomikes\_python\_challenges](#codingnomikes_python_challenges)
+      - [$](#)
+    - [The working directory](#the-working-directory)
+    - [Listing files in the working directory](#listing-files-in-the-working-directory)
+    - [Moving down the hierachy](#moving-down-the-hierachy)
+    - [Moving back out](#moving-back-out)
+      - [.](#-1)
+      - [..](#-2)
+    - [Creating and deleting directories](#creating-and-deleting-directories)
+    - [Creating empty files](#creating-empty-files)
+    - [Removing files](#removing-files)
+
+# Chapter 1.0 - Basic shell usage
 
 This chapter shows you how to navigate in the shell. It explains what a shell is, how it evolved to what it is today, and gives you a little bit of trivia and history about terminals.
 
