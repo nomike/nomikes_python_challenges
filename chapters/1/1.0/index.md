@@ -1,3 +1,5 @@
+<div class="toc">
+
 - [Chapter 1.0 - Basic shell usage](#chapter-10---basic-shell-usage)
   - [terminal](#terminal)
   - [shell](#shell)
@@ -15,6 +17,8 @@
     - [Creating and deleting directories](#creating-and-deleting-directories)
     - [Creating empty files](#creating-empty-files)
     - [Removing files](#removing-files)
+
+</div>
 
 # Chapter 1.0 - Basic shell usage
 
