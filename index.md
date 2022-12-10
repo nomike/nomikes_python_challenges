@@ -1,5 +1,13 @@
 This is a rudimenatary shell and python course, to help absolute beginners to start programming.
 
+- [Prerequisites](#prerequisites)
+  - [Operating system](#operating-system)
+  - [A nice terminal emulator](#a-nice-terminal-emulator)
+  - [Integrated development environment](#integrated-development-environment)
+- [A note on me](#a-note-on-me)
+- [Reporting issues](#reporting-issues)
+- [Start the course](#start-the-course)
+
 # Prerequisites
 
 ## Operating system
