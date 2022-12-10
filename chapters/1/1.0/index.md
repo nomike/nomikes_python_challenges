@@ -8,7 +8,7 @@
       - [$](#)
     - [The working directory](#the-working-directory)
     - [Listing files in the working directory](#listing-files-in-the-working-directory)
-    - [Moving down the hierachy](#moving-down-the-hierachy)
+    - [Moving down the hierarchy](#moving-down-the-hierarchy)
     - [Moving back out](#moving-back-out)
       - [.](#-1)
       - [..](#-2)
@@ -29,17 +29,17 @@ The latest text displayed to the user was no longer hidden by a clunky mechanica
 
 These VDUs still didn't have internal processing power as the computers where still very large, clunky and expensive. It was with the invention of the microchip that computers started to become small and inexpensive enough to put them on or under desks and viable to be used by a single person at a time.
 
-Today, computer software emulates those VDU terminals in terminal emulators. One of those is gnome-terminal, wich is the terminal you get when you press <ctrl>+<alt>+<t> on an ubuntu system.
+Today, computer software emulates those VDU terminals in terminal emulators. One of those is gnome-terminal, which is the terminal you get when you press <ctrl>+<alt>+<t> on an ubuntu system.
 
 
 ## shell
 
 A shell is a computer program that exposes an operating system's services to a human user or other programs. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system.
 
-In most cases, this term is refering to a command-line interface.
+In most cases, this term is referring to a command-line interface.
 Command-line interfaces are typically accessed via a terminal emulator.
 
-The shell prompts the user for entering commands and executes them. Once the programm is finished, the shell shows it's prompt again, awaiting further user input.
+The shell prompts the user for entering commands and executes them. Once the program is finished, the shell shows it's prompt again, awaiting further user input.
 
 ### The prompt
 
@@ -59,11 +59,11 @@ The part after the @ symbol shows the name of the computer.
 
 #### ~/coding/nomikes_python_challenges
 
-This part shows the curent directory you are in. Directories are like folders (in Windows they are often called folders instead of files since Windows 95) where you can store documents in. They have a name and group certain files together (you notice the similarity in terms between computers and a physical filing system :)).
+This part shows the current directory you are in. Directories are like folders (in Windows they are often called folders instead of files since Windows 95) where you can store documents in. They have a name and group certain files together (you notice the similarity in terms between computers and a physical filing system :)).
 
 #### $
 
-This is what originally was referred to as "prompt". In unix like systems, "$" is the prompt shown when you are logged in as a regular user. If you are logged in as a super-user or root, a user which has more privilleges and can thus do more damage, this symbol usually changes to "#" to tell you that you need to be more cautious about what you're doing.
+This is what originally was referred to as "prompt". In unix like systems, "$" is the prompt shown when you are logged in as a regular user. If you are logged in as a super-user or root, a user which has more privileges and can thus do more damage, this symbol usually changes to "#" to tell you that you need to be more cautious about what you're doing.
 
 
 ### The working directory
@@ -85,7 +85,7 @@ chapters  glossary.md  LICENSE  readme.md
 ```
 ***Note:** In your terminal different colors will be used for different types of objects. Directories for example will be blue. This get's lost in this tutorial of course.*
 
-The `ls` command also supports parameters to change it's behaviour. This for example gives a more detailed ("long") listing of the directory:
+The `ls` command also supports parameters to change it's behavior. This for example gives a more detailed ("long") listing of the directory:
 
 ```
 nomike@max:~/coding/nomikes_python_challenges$ ls -l
@@ -99,7 +99,7 @@ drwxrwxr-x 3 nomike nomike  4096 Nov 24 22:56 chapters
 showing file sizes, modification timestamps and various other info.
 For example note the "d" character in the first column, which signifies that the item is a directory.
 
-### Moving down the hierachy
+### Moving down the hierarchy
 You can change the working directory to be inside a subdirectory using the "cd" (change directory) command:
 
 ```

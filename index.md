@@ -1,4 +1,4 @@
-This is a rudimenatary shell and python course, to help absolute beginners to start programming.
+This is a rudimentary shell and python course, to help absolute beginners to start programming.
 
 - [Prerequisites](#prerequisites)
   - [Operating system](#operating-system)
@@ -32,7 +32,7 @@ I started working with computers at around 10-12 years of age (1993). My dad bro
 
 While my dad guided me through the first few steps on the PC (he just participated in a Microsoft Office training at work) I quickly became more proficient than him and began teaching him new tricks.
 
-I learned, by trying things out and being courious. I read PC magazines and books (it was years before the Internet was widespread enough for us to get the first internet connection). What I'm trying to teach you here is that you shouldn't be afraid of trying out things and experimenting. For example if you don't know how to set the clock on your microwave, just try pressing and long-pressing a few buttons, you can't destroy it.
+I learned, by trying things out and being curious. I read PC magazines and books (it was years before the Internet was widespread enough for us to get the first internet connection). What I'm trying to teach you here is that you shouldn't be afraid of trying out things and experimenting. For example if you don't know how to set the clock on your microwave, just try pressing and long-pressing a few buttons, you can't destroy it.
 
 I was having lots of arguments with my dad when the computer wasn't working again (most likely I was trying to improve something, feels a bit like Time the Toolman in retrospect ;-)). Thus I recommend you though to either use a scrap machine, which doesn't have important data on it, or to keep regular backups. I will try to point out throughout the course when things might get dangerous.
 
@@ -46,4 +46,4 @@ If you find any bugs or mistakes in this course, you can either open an issue on
 
 # Start the course
 
-Are you ready to learn someting new? Then head on to [chapter 1.0](chapters/1/1.0/) where I teach you about terminals and shells and explain a bit of computer history.
+Are you ready to learn something new? Then head on to [chapter 1.0](chapters/1/1.0/) where I teach you about terminals and shells and explain a bit of computer history.
