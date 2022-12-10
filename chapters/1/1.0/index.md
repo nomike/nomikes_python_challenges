@@ -1,24 +1,4 @@
-<div class="toc">
-
-- [Chapter 1.0 - Basic shell usage](#chapter-10---basic-shell-usage)
-  - [terminal](#terminal)
-  - [shell](#shell)
-    - [The prompt](#the-prompt)
-      - [nomike](#nomike)
-      - [max](#max)
-      - [~/coding/nomikes\_python\_challenges](#codingnomikes_python_challenges)
-      - [$](#)
-    - [The working directory](#the-working-directory)
-    - [Listing files in the working directory](#listing-files-in-the-working-directory)
-    - [Moving down the hierarchy](#moving-down-the-hierarchy)
-    - [Moving back out](#moving-back-out)
-      - [.](#-1)
-      - [..](#-2)
-    - [Creating and deleting directories](#creating-and-deleting-directories)
-    - [Creating empty files](#creating-empty-files)
-    - [Removing files](#removing-files)
-
-</div>
+[TOC]
 
 # Chapter 1.0 - Basic shell usage
 

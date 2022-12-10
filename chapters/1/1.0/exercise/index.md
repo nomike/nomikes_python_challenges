@@ -1,9 +1,4 @@
-- [Navigate through folders](#navigate-through-folders)
-- [Built-in help](#built-in-help)
-- [Recursive delete](#recursive-delete)
-- [Delete an empty directory with `rm`](#delete-an-empty-directory-with-rm)
-- [More options for `rm`](#more-options-for-rm)
-- [Cleanup](#cleanup)
+[TOC]
 
 # Navigate through folders
 
