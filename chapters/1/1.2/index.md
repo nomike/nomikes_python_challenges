@@ -99,7 +99,7 @@ If I run `cat /usr/bin/ls` for example, my prompt will look weird and even the s
 
 To reset the terminal to a usable state, simply use the `reset` command.
 
-***Note:* As you currently can't read what's on your screen, you have to type this blindly, trust that you din't make a typo and press enter.
+***Note:** As you currently can't read what's on your screen, you have to type this blindly, trust that you din't make a typo and press enter. If you are unsure about that, press ^c to get a new prompt and try again.*
 
 This will clear the screen, and you will be presented with a nice looking prompt.
 
