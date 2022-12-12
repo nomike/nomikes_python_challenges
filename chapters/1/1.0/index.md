@@ -179,4 +179,4 @@ Files can be removed with the `rm` command:
 nomike@max:~/coding/nomikes_python_challenges$ rm bar
 ```
 
-Continue now with the exercise.
+Continue now with the [exercise](exercise).
