@@ -1,8 +1,8 @@
-[TOC]
-
-# Chapter 1.0 - Basic shell usage
+# Chapter 1.0 - Terminals, shells, directories
 
 This chapter shows you how to navigate in the shell. It explains what a shell is, how it evolved to what it is today, and gives you a little bit of trivia and history about terminals.
+
+[TOC]
 
 ## Terminals
 Older computers where big mainframe systems filling entire rooms. Multiple users could operate those machines simultaneously using terminals. Initially these consisted of electronic typewriters with attached keyboards.
