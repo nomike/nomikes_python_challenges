@@ -165,3 +165,4 @@ nomike@max:~$
 
 And secondly, your home directory is abbreviated as `~`. A `cd ~` also sends you home and you can use it within paths as well. So if your username is `nomike`, the path `/home/nomike/Pictures/portrait.txt` is equal to `~/Pictures/portrait.txt`.
 
+In the [exercise](exercise/) you can explore your filesystem.
