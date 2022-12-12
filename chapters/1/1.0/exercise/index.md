@@ -56,3 +56,5 @@ What do the options `-f`, `-i`, and `-I` do? Try them out!
 # Cleanup
 
 When you're done with this exercise, cleanup by deleting the `c1` folder with all of it's content.
+
+You can now progress to [Chapter 1.1](../../1.1/).
