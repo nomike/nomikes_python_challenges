@@ -7,13 +7,13 @@ This chapter shows you how to navigate in the shell. It explains what a shell is
 ## Terminals
 Older computers where big mainframe systems filling entire rooms. Multiple users could operate those machines simultaneously using terminals. Initially these consisted of electronic typewriters with attached keyboards.
 
-![IBM 2741 Print Terminal](.res/IBM_2741_(I197205).png)
+<img src=".res/IBM_2741_(I197205).png" alt="IBM 2741 Print Terminal" width="296" heigth="347" style="heigth: auto; max-width 80%" />
 
 Due to these origins, a lot of terms regarding command-line interfaces still refer to elements of typewriters. For example the control-character for advancing to the next line is called "new line" on unix-like systems. In Windows, advancing to the next line requires two characters: carriage return followed by a new line, resembling the two motions a physical typewriter needs to perform to go to the beginning of the next line.
 
 As technology evolved, those typewriters were replaced by screens.
 
-![DEC VT100 Terminal](.res/811px-DEC_VT100_terminal_transparent.png)
+<img src=".res/811px-DEC_VT100_terminal_transparent.png" alt="DEC VT100 Terminal" width="811" heigth="720" style="height: auto; max-width: 80%" />
 
 These so called visual display units (VDUs) offered new possibilities.
 
@@ -21,7 +21,7 @@ Text displayed could easily be erased and overwritten. Buttons for deleting the 
 
 The latest text displayed to the user was no longer hidden by a clunky mechanical typing device. So the current position of where new text will appear on the screen now somehow had to be shown to the user. Thus the cursor was invented.
 
-![Cursor in Microsoft DOS](.res/msdos.png)
+<img src=".res/msdos.png" alt="Cursor in Microsoft DOS" width="500" heigth="281" style="heigth: auto; max-width: 80%" />
 
 It was now possible to move the cursor around the screen, so cursor keys where added to the keyboard.
 
