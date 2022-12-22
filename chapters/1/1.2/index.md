@@ -2,6 +2,8 @@
 
 In this chapter you will learn how to create files and about how to view and change their contents.
 
+[TOC]
+
 ## Creating empty files
 
 One way to create an empty file (or to be more precise: to ensure that a file exists) is using the `touch` command which we have used in the previous chapters already:
