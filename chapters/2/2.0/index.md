@@ -48,7 +48,7 @@ To combat these issues, high-level programming languages where invented, some of
 
 So in a modern language, the above example is as easy as
 
-```c
+```python
 10 + 32
 ```
 
