@@ -202,4 +202,4 @@ You can also just close the terminal window by using the "x" button on top, usin
 
 ***Note:** There is an even faster way of exiting the shell, but this will come up in a later chapter.*
 
-Continue now with the [exercise](exercise).
+Continue now with the [exercise](exercise/).
