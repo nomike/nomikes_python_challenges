@@ -60,7 +60,7 @@ To exit, simply type "q" again.
 
 Nowadays `more` is hardly used as everybody has switched to the more advanced `less` program.
 
-### Editing files
+## Editing files
 
 If you want to change the contents of a file you could use an editor.
 
@@ -77,7 +77,7 @@ Because of this, it is usually preferred to use a terminal based text editor.
 
 There is a variety of options available: vi, vim, emacs, joe to only name a few. These sometimes offer tons of features and flexibility but at the cost of complexity.
 
-## nano
+### nano
 
 At the beginning, you might want to use `nano` though, which is an easy to use text editor. It might not be as feature rich as vi or emacs, but it does the job quite well ([XKDS: 378: Real Programmers](https://www.explainxkcd.com/wiki/index.php/378:_Real_Programmers)).
 
@@ -101,8 +101,8 @@ If I run `cat /usr/bin/ls` for example, my prompt will look weird and even the s
 
 To reset the terminal to a usable state, simply use the `reset` command.
 
-***Note:** As you currently can't read what's on your screen, you have to type this blindly, trust that you din't make a typo and press enter. If you are unsure about that, press ^c to get a new prompt and try again.*
+***Note:** As you currently can't read what's on your screen, you have to type this blindly, trust that you didn't make a typo and press enter. If you are unsure about that, press ^c to clear the prompt and try again.*
 
 This will clear the screen, and you will be presented with a nice looking prompt.
 
-Go give this a try!
+Go give it a try!
