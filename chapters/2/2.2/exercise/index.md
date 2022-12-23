@@ -10,6 +10,7 @@ Your goal is to extend the hello world program to be more friendly. Instead of g
 Please enter your name: nomike
 Hello, nomike. Nice to meet you!
 ```
+
 ## Calculate the sum of two values
 
 After greeting you, the program should ask you to input two numbers and should print the sum on screen:

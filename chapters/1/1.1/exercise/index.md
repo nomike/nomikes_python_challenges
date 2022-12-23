@@ -1,3 +1,5 @@
+# Chapter 1.1 - Exercise
+
 With this exercise you're invited to navigate around within the filesystem.
 
 * What directories are located directly within the root-directory?

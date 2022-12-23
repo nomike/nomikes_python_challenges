@@ -4,7 +4,7 @@ As you can see in the example above, the python interpreter prints some informat
 
 It tells you how to get help, the copyright message and so on. And then it waits for you to enter comands by displaying a prompt.
 
-That prompt is the same concept as with your shell but instead of `nomike@max:~$ ` it simply is `>>> `.
+That prompt is the same concept as with your shell but instead of `nomike@max:~$` it simply is `>>>`.
 
 You can then do simple calculations for example:
 
@@ -92,9 +92,11 @@ print(name)
 ```
 
 ## Math influences
+
 As programming drew a lot of inspiration from mathematics, most of the rules are the same, for example operator precedence (e.g. point before line) as seen in the example above.
 
 ## A word on parentheses
+
 There could be endless debates on social media about whether the answer to `8 / 2 * (2 + 2)` is 1 or 16 (try putting this into an interactive python session to get the right answer), programming code should not be up for debate at all. It is thus adviseable to use parentheses in this case:
 
 `(8 / 2) * (2 + 2)`
@@ -175,7 +177,7 @@ As you can see, the `0` could be ommitted, but IMHO it makes the code less reada
 
 A character is one symbol which could be printed to screen (e.g. 'a' or '^').
 
-### Strings
+### Strings are lists of characters
 
 Multiple characters in a list are called a string. You have seen this in previous examples already.
 

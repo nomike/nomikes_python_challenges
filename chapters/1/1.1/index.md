@@ -112,7 +112,7 @@ document_root/index.html
 Music
 ```
 
-A path could also contain hidden items. 
+A path could also contain hidden items.
 
 ```plaintext
 .state-secrets/roswell.txt
@@ -122,6 +122,7 @@ nomike/.hidden/desires.txt
 ../../
 subfolder/././././././../foo.txt
 ```
+
 As you can see, the special directories `.` and `..` can be used in paths as well.
 
 ## The root directory
@@ -146,6 +147,7 @@ Some examples for absolute paths
 /usr/bin/rm
 /etc/users
 ```
+
 ## The home directory
 
 Every user has a home directory. This is typically a directory named after the username and is located in `/home`. My home directory is thus `/home/nomike`.

@@ -5,6 +5,7 @@ This chapter shows you how to navigate in the shell. It explains what a shell is
 [TOC]
 
 ## Terminals
+
 Older computers where big mainframe systems filling entire rooms. Multiple users could operate those machines simultaneously using terminals. Initially these consisted of electronic typewriters with attached keyboards.
 
 <img src=".res/IBM_2741_(I197205).png" alt="IBM 2741 Print Terminal" width="296" heigth="347" style="heigth: auto; max-width 80%" />
@@ -27,7 +28,7 @@ It was now possible to move the cursor around the screen, so cursor keys where a
 
 These VDUs still didn't have internal processing power as the computers where still very large, clunky and expensive. It was with the invention of the microchip that computers started to become small and inexpensive enough to put them on or under desks and viable to be used by a single person at a time.
 
-Today, computer software emulates those VDU terminals in terminal emulators. One of those is gnome-terminal, which is the terminal you get when you press <ctrl>+<alt>+<t> on an ubuntu system.
+Today, computer software emulates those VDU terminals in terminal emulators. One of those is gnome-terminal, which is the terminal you get when you press ctrl-alt-t on an ubuntu system.
 
 ## shells
 
@@ -38,7 +39,7 @@ Command-line interfaces are typically accessed via a terminal emulator.
 
 The shell prompts the user for entering commands and executes them. Once the program is finished, the shell shows it's prompt again, awaiting further user input.
 
-In unix like operating systems, the most commonly used shell nowadays is bash (Bourne Again SHell). There are other shells as well (ksh, csh, zsh) to name only a few but throughout this course we will be using bash, which is also the default shell for Ubuntu and macos. 
+In unix like operating systems, the most commonly used shell nowadays is bash (Bourne Again SHell). There are other shells as well (ksh, csh, zsh) to name only a few but throughout this course we will be using bash, which is also the default shell for Ubuntu and macos.
 
 ### The prompt
 
@@ -82,6 +83,7 @@ If you are unsure in which directory you currently are and your prompt is config
 nomike@max:~/coding/nomikes_python_challenges$ pwd
 /home/nomike/coding/nomikes_python_challenges
 ```
+
 ### Listing files in the working directory
 
 The `ls` (list command) lists what's in the working directory:
@@ -105,6 +107,7 @@ showing file sizes, modification timestamps and various other info.
 For example note the "d" character in the first column, which signifies that the item is a directory.
 
 ### Moving down the hierarchy
+
 You can change the working directory to be inside a subdirectory using the `cd` (change directory) command:
 
 ```plaintext
@@ -115,12 +118,15 @@ nomike@max:~/coding/nomikes_python_challenges/chapters$
 Notice how this changed the prompt.
 
 ### Moving back out
+
 There are actually two hidden items in (almost) every directory:
 
 #### .
+
 This is a shortcut which refers to the current directory.
 
 #### ..
+
 This is a shortcut which refers to the parent directory.
 
 So by combining the knowledge you gained so far, you can use
@@ -129,6 +135,7 @@ So by combining the knowledge you gained so far, you can use
 nomike@max:~/coding/nomikes_python_challenges/chapters$ cd ..
 nomike@max:~/coding/nomikes_python_challenges$ 
 ```
+
 to move back to the directory you came from.
 
 ### Creating and deleting directories

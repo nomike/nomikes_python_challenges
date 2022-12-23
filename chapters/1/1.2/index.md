@@ -29,6 +29,7 @@ Great, I'm a file!
 ```
 
 ### more
+
 If a file is large, it will not fit on your screen and you will only be able to see the bottom part of it.
 
 Try running this for example:
@@ -69,6 +70,7 @@ You could use `gnome-text-editor` for example:
 ```plaintext
 gnome-text-editor hello.txt
 ```
+
 ![gnome-text-editor](.res/gnome-text-editor.png)
 
 This might look like a familiar convenient user interface, but as you can see, we are not in our terminal anymore until we close the editor. Software like this typically requires you to use your mouse which, as you might have noticed, wasn't necessary at all so far when navigating in the shell.
