@@ -1,30 +1,36 @@
 # Chapter 2.0 - The interactive python interpreter
 
-Already the title of this chapter includes three words, worthy of explanation.
+The title of this chapter already includes three words worthy of explanation.
+But before we dive into that, I want to tell you a little bit about the history of computer programming languages.
 
 [TOC]
 
-## Machine code
+## Machine code and how a CPU works
 
-In order to understand what an interpreter is, we first need to understand what machine code (sometimes also called machine language) is.
+In order to understand what an interpreter is, we first need to understand how a CPU works and what machine code (sometimes also called machine language) is.
 
-As I already mentioned, computers only work in binary. The central processing unit (CPU) has wires coming in and out, which can either carry a voltage or not, and these two states represent the numbers 1 and 0.
+A very basic CPU has pins (also called lines) which are connected to the rest of the system. There are lines for inputting data, lines for outputting data and lines for inputting commands.
 
-For a CPU to calculate the sum of the decimal numbers 10 and 32 you need to tell the CPU to store the number 10 in place a, store the number 32 in place b and then tell it to calculate the sum of whatever is currently stored in a and b and store the result in place c.
+A CPU also contains a few tiny data storage places where it can temporarily store simple values. These are called registers.
 
-Depending on what type of CPU you have, there are specific sequences of binary numbers, which tell the CPU to perform these actions.
+If you want the CPU to add the numbers 10 and 32, you would need to perform a few steps:
 
-Early computers had holes which you had to connect with cables to set lines to 1 or 0 and thus program the machine.
+1. Set the data-input pins to the binary representation of the number 10 and send the "store data from input to register a" instruction.
+2. Set the data-input pins to the binary representation of the number 32 and send the "store data from input to register b" instruction.
+3. Send the "calculate the sum of register a and register b and store the result in register a" instruction to the CPU
+
+You can then continue with other instructions and further manipulate that data.
+
+Early computers had contact-panels where you had to run jumper wires between points to input data and instructions. Output was displayed with lamps who where either on or off.
 
 <img src=".res/eniac.jpeg" alt="ENIAC - Electronic Numerical Integrator and Computer (photo taken between 1947 and 1955)" width="1340" height="1024" style="height: auto; max-width: 80%" />
 
-Later machines used switches.
-
-But this was cumbersome, error prone and difficult to learn.
+Later machines simplified things and used switches.
+But this was still cumbersome, error prone and difficult to learn.
 
 ## Assembly language
 
-To make things easier, assembly language was introduced throughout the 1940s and 1950s. It allowed to use a more human friendly approach of programming.
+To make things easier, assembly language was introduced throughout the 1940s and 1950s. It allowed to use a more human friendly approach to programming.
 
 The above example of adding 10 and 32 could look like this in assembly:
 
@@ -34,19 +40,19 @@ mov ebx, 32
 add eax, ebx
 ```
 
-It is much easier then connecting wires, but still not easy to do.
+It is much more convenient then connecting wires, but still not easy to do. You need to understand a lot about the internal workings of your CPU and the rest of your computers components an how they interact with each other. Simple tasks could require a lot of instructions to be executed by the CPU.
 
-If you send these characters to the CPU however, it will not understand it, as it only understands machine code.
+If you send these code to the CPU as characters however, it will not understand it, as it only understands the 1s and 0s ot machine code which we talked about earlier.
 
-So you need a program, which converts that text into machine code, and this is called an assembler.
+You need a program, which converts that text into machine code, and this is called an assembler.
 
 ## High-level programming languages
 
-As time moved on, computers got more powerful and people wanted to perform more complex tasks with them, which was difficult to do in assembly. Assembly is also very close to the hardware (that's why it is called a low-level programming language). The above sample program would run on todays Intel x86 based CPUs, but you would be out of luck on an old Commodore 64 or even a modern smartphone as they use different CPU architectures.
+As time moved on, computers got more powerful and people wanted to perform more complex tasks with them, which was difficult to do in assembly. Assembly is also very close to the hardware (that's why it is also called a low-level programming language). The above sample program would run on todays Intel x86 based CPUs, but you would be out of luck on an old Commodore 64 or even a modern smartphone as those use different CPU architectures where the instructions are completely different.
 
-To combat these issues, high-level programming languages where invented, some of which are much more related to a natural language (mostly English).
+To solve these issues, high-level programming languages have been invented.
 
-So in a modern language, the above example is as easy as
+In a modern language, the above example is as easy as
 
 ```python
 10 + 32
@@ -54,32 +60,37 @@ So in a modern language, the above example is as easy as
 
 ## Compilers
 
-Code from these high-level languages again needs to be translated into machine code, so that the CPU can use it. One way of doing so is a compiler, which takes the program you have written (the source code) and converts it into machine language. At the end you get a binary file, which can be sent to the CPU and make it do whatever you need.
+Code from these high-level languages again needs to be translated into machine code, so that the CPU can use it. One way of doing so is by using a compiler.
+
+A compiler takes the program you wrote (the source code) and converts it into machine language. When it's done you get a binary file, which can be sent to the CPU to make it do whatever you need.
 
 ## Interpreters
 
-Interpreters are another way of executing high-level programming code. Instead of converting your whole program into a big blob of machine code at once, an interpreter takes the first line of your code, converts it to machine code, let's the CPU execute it, takes the next line of your code and repeats that process over and over.
+Another way of executing high-level programming code are interpreters.
+Instead of converting your whole program into a big blob of machine code at once, an interpreter takes one line of your code, converts it to machine code, let's the CPU execute it, takes the next line of your code and repeats that process over and over.
 
 There are pros and cons for both concepts and many programming languages use even more advanced methods, but that's a story for another timer perhaps.
 
-C, the programming language in which unix and linux are written, is usually used with a compiler.
-Python is usually interpreted.
+All you need to know for now, is that python typically is interpreted.
 
-However, compilers for python and interpreters for C do exist, but they are not that common (please excuse that I'm greatly simplifying how python works here).
+## Python
 
-## python
+Python was created in the late 1980s with the goal of being a simple, easy to read and easy to learn programming language.
 
-Python was created in the late 1980s with the goal of being a simple, easy to read and easy to learn programming language. Rather than building all of its functionality into its core, Python was designed to be highly extensible via modules. This makes it very flexible and popular. A lot of programs and tools are written in python nowadays.
+The syntax is easy to understand and learn. It is easy to extend the language and thus python is very versatile and powerful. Despite that it managed to stay very simple.
+
+This makes it very popular and a lot of programs and tools are written in python nowadays.
 
 ## A word on python versions
 
-In October 2000 python 2.0 was released and it quickly started to become a success. Minor revisions (2.1, 2.2, ... up until 2.7) followed, but in December 2008 python 3.0 was released.
+For a long time python version 2.x was used but it was slowly replaced by python 3.
+While both versions are the same programming language, there are certain incompatible differences between them.
 
-While python 3.0 (or python3 for short) follows the same principles, it introduced changes to the language which make it incompatible with python2. In 2020 version 2.7 and thus the last one within the 2.x range was declared end-of-life. Most operating systems now no longer ship python2 and default to python3.
+Python 2 was declared end of life years ago and thus everyone should have switched to python 3 already. This course will only cover python 3.
 
-However, it might be that the `python` still refers to version 2.7 on your system. If you use Ubuntu, you should be fine however.
+If you're running an older version of your operating system, you still might have python 2 installed on your computer.
 
-To double check this you can use the `--version` parameter:
+You can check this with the `--version` parameter of the python command:
 
 ```plaintext
 nomike@max:~$ python --version
@@ -92,12 +103,12 @@ If it shows a 2.7 version for you, you could try executing python3 directly:
 nomike@max:~$ python3 --version
 Python 3.10.7
 ```
-
-In case this doesn't work, you might need to ask a friend or google to figure out how to solve this for your particular setup.
+If `python3` gives you a "command not found" error message or something similar, you might want to consider updating your operating system. Or ask google or a friend for assistance.
 
 ## Interactive
 
-The last word to explain from the headline is "interactive". It means that you can just start the python interpreter and write code, which get's executed whenever you press enter.
+I almost forgot that there is one last word left from the headline which needs explanation: "interactive".
+It means that if you just start the python interpreter, you will get a prompt where you can directly input python code which gets executed right away:
 
 ```plaintext
 Python 3.10.7 (main, Nov 24 2022, 19:45:47) [GCC 12.2.0] on linux
@@ -105,4 +116,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-As this chapter was just about explaining terms and giving you a bit of background knowledge, there is no exercise and you should head straight on to [chapter 2.1](../2.1/) where you will have your first interactive python experience, which brings you very close you your first real python program.
+This is a great way to quickly test code and you will have the chance to try it out in the next [chapter](../2.1/) where you will have your first interactive python experience, which brings you very close you your first real python program.

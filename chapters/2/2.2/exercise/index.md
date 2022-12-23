@@ -24,10 +24,12 @@ The sum of those numbers is 4711.
 ## Solution
 
 When you're done, you could compare your code with the [solution](hello.py).
-Does your code look the same? Does it produce the same results as the example above?
+Does your code look similar? Does it produce the same results as the example above?
+
+## Invalid input
 
 For now this simple program could not handle invalid user input. Try inputting text instead of integers when asked for numbers.
 
-I will show you how to solve this in a later chapter.
+This requires more complex code and I will show you how to make your code more resilient in a later chapter.
 
-But first let's have a look at conditions which are the main topic of [chapter 3](../../../3).
+For now let's have a look at conditions which are the main topic of [chapter 3](../../../3).
