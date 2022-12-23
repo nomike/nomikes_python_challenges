@@ -8,13 +8,13 @@ This chapter shows you how to navigate in the shell. It explains what a shell is
 
 Older computers where big mainframe systems filling entire rooms. Multiple users could operate those machines simultaneously using terminals. Initially these consisted of electronic typewriters with attached keyboards.
 
-<img src=".res/IBM_2741_(I197205).png" alt="IBM 2741 Print Terminal" width="296" heigth="347" style="heigth: auto; max-width 80%" />
+<img src=".res/IBM_2741_(I197205).png" alt="IBM 2741 Print Terminal" width="296" height="347" style="height: auto; max-width 80%" />
 
 Due to these origins, a lot of terms regarding command-line interfaces still refer to elements of typewriters. For example the control-character for advancing to the next line is called "new line" on unix-like systems. In Windows, advancing to the next line requires two characters: carriage return followed by a new line, resembling the two motions a physical typewriter needs to perform to go to the beginning of the next line.
 
 As technology evolved, those typewriters were replaced by screens.
 
-<img src=".res/811px-DEC_VT100_terminal_transparent.png" alt="DEC VT100 Terminal" width="811" heigth="720" style="height: auto; max-width: 80%" />
+<img src=".res/811px-DEC_VT100_terminal_transparent.png" alt="DEC VT100 Terminal" width="811" height="720" style="height: auto; max-width: 80%" />
 
 These so called visual display units (VDUs) offered new possibilities.
 
@@ -22,7 +22,7 @@ Text displayed could easily be erased and overwritten. Buttons for deleting the 
 
 The latest text displayed to the user was no longer hidden by a clunky mechanical typing device. So the current position of where new text will appear on the screen now somehow had to be shown to the user. Thus the cursor was invented.
 
-<img src=".res/msdos.png" alt="Cursor in Microsoft DOS" width="500" heigth="281" style="heigth: auto; max-width: 80%" />
+<img src=".res/msdos.png" alt="Cursor in Microsoft DOS" width="500" height="281" style="height: auto; max-width: 80%" />
 
 It was now possible to move the cursor around the screen, so cursor keys where added to the keyboard.
 
@@ -187,7 +187,7 @@ nomike@max:~/coding/nomikes_python_challenges$ rm bar
 
 ### Let me out of here!
 
-Even though a vast playground like the shell seems to spar endless hours of fun, life outside the computer goes on and you need to get out of your terminal. Luckly the next exit is right around the corner. In fact there's even multiple.
+Even though a vast playground like the shell seems to spar endless hours of fun, life outside the computer goes on and you need to get out of your terminal. Luckily the next exit is right around the corner. In fact there's even multiple.
 
 #### exit
 
@@ -201,11 +201,11 @@ But what happens behind the scenes?
 
 When you start your terminal emulator, it executes your shell, displays it's output and forwards your keyboard and mouse input to it. How this happens, you will learn later in this course.
 
-When you invoke the `exit` command within your shell, the shell just exits itself. Your terminal emulator gets informed that the shell was just closed and, depending on it's configuraion, closes itself as well making the window on your desktop disapear.
+When you invoke the `exit` command within your shell, the shell just exits itself. Your terminal emulator gets informed that the shell was just closed and, depending on it's configuration, closes itself as well making the window on your desktop disappear.
 
 ### Just close the terminal window
 
-You can also just close the terminal window by using the "x" button on top, using the quit option in the menu or by pressing alt+f4 wich is the shorcut to close a window in almost any graphical user interface (except for macos where you can try your luck with command+w, command+q, and shift+command+w. My google search was inconclusive and I currently don't own a mac to double check this).
+You can also just close the terminal window by using the "x" button on top, using the quit option in the menu or by pressing alt+f4 witch is the shortcut to close a window in almost any graphical user interface (except for macos where you can try your luck with command+w, command+q, and shift+command+w. My google search was inconclusive and I currently don't own a mac to double check this).
 
 ***Note:** There is an even faster way of exiting the shell, but this will come up in a later chapter.*
 

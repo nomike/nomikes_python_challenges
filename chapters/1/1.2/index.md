@@ -81,17 +81,17 @@ There is a variety of options available: vi, vim, emacs, joe to only name a few.
 
 ### nano
 
-At the beginning, you might want to use `nano` though, which is an easy to use text editor. It might not be as feature rich as vi or emacs, but it does the job quite well ([XKDS: 378: Real Programmers](https://www.explainxkcd.com/wiki/index.php/378:_Real_Programmers)).
+At the beginning, you might want to use `nano` though, which is an easy to use text editor. It might not be as feature rich as vi or emacs, but it does the job quite well ([XKCD: 378: Real Programmers](https://www.explainxkcd.com/wiki/index.php/378:_Real_Programmers)).
 
 ![nano](.res/nano.png)
 
-At the bottom of the screen, you can see a list of commands. These are preceded by a '^' which is also called a caret-symbol. A caret-symbol usually indicates that you need to press and hold the control key, usually labeld "crtl" on english keyboard (or "Strg" which stands for "Steuerung" on german keyboards), while pressing the other key indicated.
+At the bottom of the screen, you can see a list of commands. These are preceded by a '^' which is also called a caret-symbol. A caret-symbol usually indicates that you need to press and hold the control key, usually labeled "ctrl" on english keyboard (or "Strg" which stands for "Steuerung" on german keyboards), while pressing the other key indicated.
 
 So to exit you would press ctrl+x, to open the help you would press ctrl-g, and so on.
 
 If you made changes to the file which is currently open, `nano` will ask you whether you want to save those changes when you're exiting it.
 
-## Garbling your teminal
+## Garbling your terminal
 
 Terminals use certain control characters to change their behavior. While programs like `less` and `nano` take care of not messing things up, the `cat` command just prints everything to the terminal as-is.
 

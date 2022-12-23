@@ -1,6 +1,6 @@
 # Chapter 2.0 - The interactive python interpreter
 
-Already the title of this chapter includes three words, worthy of explenation.
+Already the title of this chapter includes three words, worthy of explanation.
 
 [TOC]
 
@@ -16,7 +16,7 @@ Depending on what type of CPU you have, there are specific sequences of binary n
 
 Early computers had holes which you had to connect with cables to set lines to 1 or 0 and thus program the machine.
 
-<img src=".res/eniac.jpeg" alt="ENIAC - Electronic Numerical Integrator and Computer (photo taken between 1947 and 1955)" width="1340" heigth="1024" style="heigth: auto; max-width: 80%" />
+<img src=".res/eniac.jpeg" alt="ENIAC - Electronic Numerical Integrator and Computer (photo taken between 1947 and 1955)" width="1340" height="1024" style="height: auto; max-width: 80%" />
 
 Later machines used switches.
 
@@ -24,7 +24,7 @@ But this was cumbersome, error prone and difficult to learn.
 
 ## Assembly language
 
-To make things easier, assembly language was introduced throught the 1940s and 1950s. It allowed to use a more human friendly approach of programming.
+To make things easier, assembly language was introduced throughout the 1940s and 1950s. It allowed to use a more human friendly approach of programming.
 
 The above example of adding 10 and 32 could look like this in assembly:
 
@@ -42,7 +42,7 @@ So you need a program, which converts that text into machine code, and this is c
 
 ## High-level programming languages
 
-As time moved on, computers got more powerful and people wanted to perform more complex tasks with them, which was dificult to do in assembly. Assembly is also very close to the hardware (that's why it is called a low-level programming language). The above sample program would run on todays Intel x86 based CPUs, but you would be out of luck on an old Commodore 64 or even a modern smartphone as they use different CPU architectures.
+As time moved on, computers got more powerful and people wanted to perform more complex tasks with them, which was difficult to do in assembly. Assembly is also very close to the hardware (that's why it is called a low-level programming language). The above sample program would run on todays Intel x86 based CPUs, but you would be out of luck on an old Commodore 64 or even a modern smartphone as they use different CPU architectures.
 
 To combat these issues, high-level programming languages where invented, some of which are much more related to a natural language (mostly English).
 
@@ -69,13 +69,13 @@ However, compilers for python and interpreters for C do exist, but they are not 
 
 ## python
 
-Python was created in the late 1980s with the goal of being a simple, easy to read and easy to learn programming language. Rather than building all of its functionality into its core, Python was designed to be highly extensible via modules. This makes it very flaxible and popular. A lot of programs and tools are written in python nowadays.
+Python was created in the late 1980s with the goal of being a simple, easy to read and easy to learn programming language. Rather than building all of its functionality into its core, Python was designed to be highly extensible via modules. This makes it very flexible and popular. A lot of programs and tools are written in python nowadays.
 
 ## A word on python versions
 
 In October 2000 python 2.0 was released and it quickly started to become a success. Minor revisions (2.1, 2.2, ... up until 2.7) followed, but in December 2008 python 3.0 was released.
 
-While python 3.0 (or python3 for short) follows the same priciples, it introduced changes to the language which make it incompatible with python2. In 2020 version 2.7 and thus the last one within the 2.x range was declared end-of-life. Most operating systems now no longer ship python2 and default to python3.
+While python 3.0 (or python3 for short) follows the same principles, it introduced changes to the language which make it incompatible with python2. In 2020 version 2.7 and thus the last one within the 2.x range was declared end-of-life. Most operating systems now no longer ship python2 and default to python3.
 
 However, it might be that the `python` still refers to version 2.7 on your system. If you use Ubuntu, you should be fine however.
 
@@ -105,4 +105,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-As this chapter was just about exolaining terms and giving you a bit of background knowledge, there is no exercise and you should head straight on to [chapter 2.1](../2.1/) where you will have your first interactive python experience, which brings you very close you your first real python program.
+As this chapter was just about explaining terms and giving you a bit of background knowledge, there is no exercise and you should head straight on to [chapter 2.1](../2.1/) where you will have your first interactive python experience, which brings you very close you your first real python program.

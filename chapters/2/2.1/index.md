@@ -2,7 +2,7 @@
 
 As you can see in the example above, the python interpreter prints some information to the screen first. It tells you that it's Python, which version of it and a couple of other things which are not important right now.
 
-It tells you how to get help, the copyright message and so on. And then it waits for you to enter comands by displaying a prompt.
+It tells you how to get help, the copyright message and so on. And then it waits for you to enter commands by displaying a prompt.
 
 That prompt is the same concept as with your shell but instead of `nomike@max:~$` it simply is `>>>`.
 
@@ -36,7 +36,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 >>> exit()
 ```
 
-Python really tries to be helpful and beginner friendly and politly tells you that in order to exit you either need to use the `exit()` command or press Ctrl-D on your keyboard.
+Python really tries to be helpful and beginner friendly and politely tells you that in order to exit you either need to use the `exit()` command or press Ctrl-D on your keyboard.
 
 ## Printing text to the terminal
 
@@ -61,7 +61,7 @@ def f(x):
 
 The syntax is a bit different, but you see the similarities.
 
-Somehwere in the dephts of the python source code, is a definition of the `print` function.
+Somewhere in the depths of the python source code, is a definition of the `print` function.
 
 ## Strings
 
@@ -97,7 +97,7 @@ As programming drew a lot of inspiration from mathematics, most of the rules are
 
 ## A word on parentheses
 
-There could be endless debates on social media about whether the answer to `8 / 2 * (2 + 2)` is 1 or 16 (try putting this into an interactive python session to get the right answer), programming code should not be up for debate at all. It is thus adviseable to use parentheses in this case:
+There could be endless debates on social media about whether the answer to `8 / 2 * (2 + 2)` is 1 or 16 (try putting this into an interactive python session to get the right answer), programming code should not be up for debate at all. It is thus advisable to use parentheses in this case:
 
 `(8 / 2) * (2 + 2)`
 
@@ -136,7 +136,7 @@ a == 10
 ```
 
 There are other comparison operators as well, such as `&gt;`, `&lt;`,`&gt;=` and `&lt;=`.
-If you want to check wheter one term not equals another, you can use `!=1`:
+If you want to check whether one term not equals another, you can use `!=1`:
 
 ```python
 a != 10
@@ -144,11 +144,11 @@ a != 10
 
 ## Basic variable types
 
-A variable could contain different things and might behave differntly based on the type of data.
+A variable could contain different things and might behave differently based on the type of data.
 
 ### Integers
 
-Wikipedia defines an integer as "a real number that can be written without a fractional component.", but it mght be easier to understand as "a number without a comma."
+Wikipedia defines an integer as "a real number that can be written without a fractional component.", but it might be easier to understand as "a number without a comma."
 
 Examples of integers are
 
@@ -171,7 +171,7 @@ Computers need to represent every number in binary and the most common method fo
 -.14
 ```
 
-As you can see, the `0` could be ommitted, but IMHO it makes the code less readable so you should try to avoid that.
+As you can see, the `0` could be omitted, but IMHO it makes the code less readable so you should try to avoid that.
 
 ### Characters
 
@@ -197,7 +197,7 @@ True
 False
 ```
 
-## Bollean operators
+## Boolean operators
 
 The presence of booleans also requires the addition of a couple of more operators. Similar to mathematics you can use the keywords `and`, `or` and `not`:
 

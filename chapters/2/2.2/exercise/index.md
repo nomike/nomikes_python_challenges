@@ -26,7 +26,7 @@ The sum of those numbers is 4711.
 When you're done, you could compare your code with the [solution](hello.py).
 Does your code look the same? Does it produce the same results as the example above?
 
-For now this simple program could not handle invalid user input. Try inputtint text instead of integers when asked for numbers.
+For now this simple program could not handle invalid user input. Try inputting text instead of integers when asked for numbers.
 
 I will show you how to solve this in a later chapter.
 

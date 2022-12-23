@@ -32,7 +32,7 @@ else:
     <else>
 ```
 
-It starts wit the keyword `if` folloed by a condition. This can be any expression which results in a boolean. A colon ':'marks the end of the condition. Followed by a newline.
+It starts wit the keyword `if` followed by a condition. This can be any expression which results in a boolean. A colon ':'marks the end of the condition. Followed by a newline.
 
 The next bit is the "then" branch (similar to a tree, when there is a branch off to the side you can opt to either follow it or stay on the current one).
 
@@ -61,6 +61,7 @@ print("The number is not too big!")}
 ```
 
 or even like this:
+
 ```c
 if(a>100){print("The number is too big!");}else{print("The number is not too big!")}
 ```
@@ -68,7 +69,7 @@ if(a>100){print("The number is too big!");}else{print("The number is not too big
 This is not readable at all. The more complicated your program gets the more important it is to format your code well and do the indentation correctly.
 
 Python chose a different path.
-What people do in other languages out of common sense, is an important symtactical element in python. The interpreter simply knows when a block ends by checking the indentation.
+What people do in other languages out of common sense, is an important syntactical element in python. The interpreter simply knows when a block ends by checking the indentation.
 
 So the same `if` in python looks like this:
 
@@ -81,7 +82,7 @@ else:
 
 Due to the indentation, there is no need for those curly braces, so there is less code to write. And those braces very often cause headaches because you can't just figure out where in the code you forgot to put close a block, if the compiler is even nice enough to tell you. Sometimes your program just behaves weirdly.
 
-In python it doesn't matter whether you use soace or tab characters for the indentation, or how many of those you use, as long as you are consistent.
+In python it doesn't matter whether you use space or tab characters for the indentation, or how many of those you use, as long as you are consistent.
 
 This will throw an error:
 
@@ -91,7 +92,7 @@ if number > 10:
    print("Multiplied by two this is " + (number * 2) + ".")
 ```
 
-***Warning:** Be careful not to mix space3s and tab characters. Modern IDEs and most editors however, will automatically convert tabs into spaces and preven you from doing that mistake.*
+***Warning:** Be careful not to mix space3s and tab characters. Modern IDEs and most editors however, will automatically convert tabs into spaces and prevent you from doing that mistake.*
 
 ## I don't have a "then"
 
