@@ -29,4 +29,4 @@ For now this simple program could not handle invalid user input. Try inputtint t
 
 I will show you how to solve this in a later chapter.
 
-But first let us have a look at conditions which are the main topic of [chapter 3](../../../3).
+But first let's have a look at conditions which are the main topic of [chapter 3](../../../3).
