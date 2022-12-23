@@ -29,7 +29,6 @@ These VDUs still didn't have internal processing power as the computers where st
 
 Today, computer software emulates those VDU terminals in terminal emulators. One of those is gnome-terminal, which is the terminal you get when you press <ctrl>+<alt>+<t> on an ubuntu system.
 
-
 ## shells
 
 A shell is a computer program that exposes an operating system's services to a human user or other programs. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system.
@@ -178,5 +177,29 @@ Files can be removed with the `rm` command:
 ```plaintext
 nomike@max:~/coding/nomikes_python_challenges$ rm bar
 ```
+
+### Let me out of here!
+
+Even though a vast playground like the shell seems to spar endless hours of fun, life outside the computer goes on and you need to get out of your terminal. Luckly the next exit is right around the corner. In fact there's even multiple.
+
+#### exit
+
+The most obvious choice is the exit command.
+
+```plaintext
+nomike@max:~/coding/nomikes_python_challenges$ exit
+```
+
+But what happens behind the scenes?
+
+When you start your terminal emulator, it executes your shell, displays it's output and forwards your keyboard and mouse input to it. How this happens, you will learn later in this course.
+
+When you invoke the `exit` command within your shell, the shell just exits itself. Your terminal emulator gets informed that the shell was just closed and, depending on it's configuraion, closes itself as well making the window on your desktop disapear.
+
+### Just close the terminal window
+
+You can also just close the terminal window by using the "x" button on top, using the quit option in the menu or by pressing alt+f4 wich is the shorcut to close a window in almost any graphical user interface (except for macos where you can try your luck with command+w, command+q, and shift+command+w. My google search was inconclusive and I currently don't own a mac to double check this).
+
+***Note:** There is an even faster way of exiting the shell, but this will come up in a later chapter.*
 
 Continue now with the [exercise](exercise).
