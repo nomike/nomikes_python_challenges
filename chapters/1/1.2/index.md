@@ -28,7 +28,7 @@ Hello world!
 Great, I'm a file!
 ```
 
-### more
+### less
 
 If a file is large, it will not fit on your screen and you will only be able to see the bottom part of it.
 
@@ -38,28 +38,15 @@ Try running this for example:
 cat /etc/group
 ```
 
-The `more` command, prints file contents until the screen is fulled.
-
-```plaintext
-more /etc/group
-```
-
-You can then use the space key to advance to have the screen filled with the next lines. If you use the enter key, only one line is printed to the bottom of your terminal and the previous lines are moved up by one line.
-
-If you want to exit the program simply type "q".
-
-### less
-
-Originally `more` only allowed you to move forward within a file (but features like that have been added to it since then).
-The `less` command was introduced to also allow you to move backwards. It also adds a lot of nice features like searching for text within a file.
+The `less` command, prints file contents until the screen is full.
 
 ```plaintext
 less /etc/group
 ```
 
-To exit, simply type "q" again.
+You can then use the space key to advance have the screen filled again with the following lines. If you use the enter key, only one line is printed to the bottom of your terminal and the previous lines are moved up by one line. You can also use the cursor up and down keys to navigate around.
 
-Nowadays `more` is hardly used as everybody has switched to the more advanced `less` program.
+To exit, simply press "q" in your keyboard.
 
 ## Editing files
 
