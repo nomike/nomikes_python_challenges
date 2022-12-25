@@ -81,7 +81,6 @@ The syntax is a bit different, but you probably recognize the similarities.
 
 And somewhere in the sheer endless depths of the python source code, there is a definition of the `print` function.
 
-
 ## Variables
 
 Like in mathematics you can have variables in programming languages which can store all kinds of data for you:
@@ -102,7 +101,6 @@ As programming drew a lot of inspiration from mathematics, most of the rules are
 ## A word on parentheses
 
 While there could be endless debates on social media about whether the answer to `8 / 2 * (2 + 2)` is 1 or 16, programming code should not be up for debate at all (try putting this into an interactive python session to get the right answer). Tp make code predictable and easy to understand it is advisable to use parentheses in this case:
-
 
 `(8 / 2) * (2 + 2)`
 
@@ -222,6 +220,16 @@ True
 >>> not ((a > 5) or (b < 20))
 False
 ```
+
+## The nothing
+
+The value of variable could be nothing. That's different to `0` for example, which is something. The keyword for nothing used in python is `None`.
+
+```python
+a = None
+```
+
+You can use it in case you don't know the value yet or if it is not defined.
 
 ## Conclusion
 

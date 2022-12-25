@@ -103,6 +103,7 @@ If it shows a 2.7 version for you, you could try executing python3 directly:
 nomike@max:~$ python3 --version
 Python 3.10.7
 ```
+
 If `python3` gives you a "command not found" error message or something similar, you might want to consider updating your operating system. Or ask google or a friend for assistance.
 
 ## Interactive
