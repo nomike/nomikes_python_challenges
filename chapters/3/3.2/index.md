@@ -4,7 +4,7 @@ One of the advantage of using computers is, that they are very good in repetitio
 
 For this you often want to use loops.
 
-[toc]
+[TOC]
 
 ## While loops
 
