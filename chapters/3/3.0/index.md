@@ -1,12 +1,14 @@
 # Chapter 3.0 - The if statement
 
-If-Statements allow you to change your programs behavior based on a condition.
+Imagine you're taking a hike and the trail branches off in two different directions. One leads to a beautiful waterfall, the other to a restaurant.
 
-A real life example could be: If it is raining, then take an umbrella with you, otherwise wear a t-shirt.
+If you are hungry, then you will go to the restaurant if not ("else") you can go check out that waterfall.
+
+That's a good example of an `if`.
 
 [TOC]
 
-## Then what?
+## Anatomy of an `if`
 
 Look at this simple example:
 
@@ -19,80 +21,70 @@ else:
 print("Thank you for your time!")
 ```
 
-The program starts by prompting the user to input a number. The input is then directly converted to an integer and stored in a variable.
+The program starts by prompting the user to input a number. The input is converted to an integer and stored in variable `a`.
 
-An `if` is then used to check whether the integer is within the expected range and the program prints out a message accordingly.
+An `if` is used to check whether `a` is within the expected range and the program prints out a message accordingly.
 
 The structure of an `if` is as follows:
 
 ```python
-if condition:
+if <condition>:
     <then>
 else:
     <else>
 ```
 
-It starts wit the keyword `if` followed by a condition. This can be any expression which results in a boolean. A colon ':'marks the end of the condition. Followed by a newline.
+It starts wit the keyword `if` followed by a condition. Any expression which results in a boolean can be a condition. A colon ':' marks the end of the condition, followed by a newline.
 
-The next bit is the "then" branch (similar to a tree, when there is a branch off to the side you can opt to either follow it or stay on the current one).
+The next section is a block of code called the "then"-branch.
 
-It is followed by the `else` keyword, which again ends with a colon and the "else" branch.
+Optionally it is followed by the `else` keyword, which again ends with a colon and a new line. Another block of code follows, which is called the "else"-branch.
 
-### Indentation
+## Code blocks
 
-A compiler/interpreter needs to know which lines belong to the "then"-branch (also called a block in programming).
+Blocks of code consist of one or more lines which ar indented by space of tab characters.
 
-In the C programming language this is achieved with curly braces. A block starts with "{" and ends with "}":
+You are free to chose how many space or tab characters and what combinations of those you use to indent code blocks, as long as you are consistent within each block.
 
-```c
-if (a > 100) {
-    print("The number is too big!");
-} else {
-    print("The number is not too big!");
-}
-```
-
-While most people follow this style of formatting, you could also write the same code like this:
-
-```c
-    if (a > 100){      print("The number is too big!");} 
-        else {
-print("The number is not too big!")}
-```
-
-or even like this:
-
-```c
-if(a>100){print("The number is too big!");}else{print("The number is not too big!")}
-```
-
-This is not readable at all. The more complicated your program gets the more important it is to format your code well and do the indentation correctly.
-
-Python chose a different path.
-What people do in other languages out of common sense, is an important syntactical element in python. The interpreter simply knows when a block ends by checking the indentation.
-
-So the same `if` in python looks like this:
+This is not OK:
 
 ```python
-if a > 100:
-    print("The number is too big!")
+
+if a > 5:
+    print("The number is too big.")
+    
+     print("Please choose another number.")
+```
+
+Even though this is valid code
+
+```python
+if it_is_raining:
+        if it_is_warm:
+         take_an_umbrella()
+         put_on_a_summer_jacket()
+        else:
+              stay_home_and_order_food()
 else:
-    print("The number is not too big!")
+ take_the_sunglasses()
 ```
 
-Due to the indentation, there is no need for those curly braces, so there is less code to write. And those braces very often cause headaches because you can't just figure out where in the code you forgot to put close a block, if the compiler is even nice enough to tell you. Sometimes your program just behaves weirdly.
-
-In python it doesn't matter whether you use space or tab characters for the indentation, or how many of those you use, as long as you are consistent.
-
-This will throw an error:
+it looks much nicer if you format it like this:
 
 ```python
-if number > 10:
-    print("The number is bigger than 10")
-   print("Multiplied by two this is " + (number * 2) + ".")
+if it_is_raining:
+    if it_is_warm:
+        take_an_umbrella()
+        put_on_a_summer_jacket()
+    else:
+        stay_home_and_order_food()
+else:
+    take_the_sunglasses()
 ```
 
-***Warning:** Be careful not to mix space3s and tab characters. Modern IDEs and most editors however, will automatically convert tabs into spaces and prevent you from doing that mistake.*
+Modern IDEs and editors automatically help you maintain consistent indentation.
+
+***Note:** For reasons of simplicity and consistency, you should avoid using tab characters for indentation. In fact most editors and IDEs automatically insert space characters when you hit the tab key.
 
 ## I don't have a "then"
 
@@ -104,10 +96,9 @@ else:
     print("The file does not exist!")
 ```
 
-This will cause an error, as the python is missing the "then"-block.
-There are two ways to fix this.
+This will throw an error however, as you are missing the mandatory "then"-block.
 
-The "pass" command, which just does nothing:
+You can use the "pass" command, which does absolutely nothing:
 
 ```python
 if file_exists:
@@ -116,9 +107,51 @@ else:
     print("The file does not exist!")
 ```
 
-Or you can simply negate your condition, which might be the more elegant solution in this case:
+But in this example it is just better to negate the condition:
 
 ```python
 if not file_exists:
     print("The file does not exist!")
 ```
+
+## elif
+
+If you want to test a variable against various colors for example, the can become unreadable quite quickly:
+
+```python
+if color=="red":
+    pass
+else:
+    if color=="yellow":
+        pass
+    else:
+        if color=="green":
+            pass
+        else:
+            if color=="blue":
+                pass
+            else:
+                print("Unsupported color: " + color)
+```
+
+To simplify code like this, the `elif` keyword was introduced which combines `else` and `if`. The same code might be written like this:
+
+```python
+if color=="red":
+    pass
+elif color=="yellow":
+    pass
+elif color=="green":
+    pass
+elif color=="blue":
+    pass
+else:
+    print("Unsupported color: " + color)
+
+```
+
+Now that looks much nicer, doesn't it?
+
+## Conclusion
+
+If you think you are ready, head on to [chapter 3.1](../3.1/) which will explain lists, else go back up and re-read sections or experiment with ifs in an example program.
