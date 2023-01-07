@@ -231,6 +231,25 @@ a = None
 
 You can use it in case you don't know the value yet or if it is not defined.
 
+## Modulo
+
+Module is an operator which you might not have heard of yet as it's not commonly used in mathematics.
+It gives you the remainder of an integer division. The symbol used for this is `%`.
+
+If you divide a by b, modulo tells you the remainder of that division:
+
+```python
+5 % 2 == 1
+```
+
+5 equals 2 times 2 plus 1
+
+```python
+12 % 3 == 0
+```
+
+12 equals 4 times 3 plus 0
+
 ## Conclusion
 
 This chapter again doesn't have an exercise. If you followed along with the examples, you should have had the opportunity to play around in an interactive python session already. So go straight on to [chapter 2.2](../2.2/) which is all about storing python code in files and requesting input from the user. It will also include the first programming challenge. I promise!
