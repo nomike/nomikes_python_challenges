@@ -5,7 +5,9 @@ But before we dive into that, I want to tell you a little bit about the history 
 
 [TOC]
 
-## Machine code and how a CPU works
+## Some backstory first
+
+### Machine code and how a CPU works
 
 In order to understand what an interpreter is, we first need to understand how a CPU works and what machine code (sometimes also called machine language) is.
 
@@ -28,7 +30,7 @@ Early computers had contact-panels where you had to run jumper wires between poi
 Later machines simplified things and used switches.
 But this was still cumbersome, error prone and difficult to learn.
 
-## Assembly language
+### Assembly language
 
 To make things easier, assembly language was introduced throughout the 1940s and 1950s. It allowed to use a more human friendly approach to programming.
 
@@ -46,7 +48,7 @@ If you send these code to the CPU as characters however, it will not understand 
 
 You need a program, which converts that text into machine code, and this is called an assembler.
 
-## High-level programming languages
+### High-level programming languages
 
 As time moved on, computers got more powerful and people wanted to perform more complex tasks with them, which was difficult to do in assembly. Assembly is also very close to the hardware (that's why it is also called a low-level programming language). The above sample program would run on todays Intel x86 based CPUs, but you would be out of luck on an old Commodore 64 or even a modern smartphone as those use different CPU architectures where the instructions are completely different.
 
@@ -58,13 +60,13 @@ In a modern language, the above example is as easy as
 10 + 32
 ```
 
-## Compilers
+### Compilers
 
 Code from these high-level languages again needs to be translated into machine code, so that the CPU can use it. One way of doing so is by using a compiler.
 
 A compiler takes the program you wrote (the source code) and converts it into machine language. When it's done you get a binary file, which can be sent to the CPU to make it do whatever you need.
 
-## Interpreters
+### Interpreters
 
 Another way of executing high-level programming code are interpreters.
 Instead of converting your whole program into a big blob of machine code at once, an interpreter takes one line of your code, converts it to machine code, let's the CPU execute it, takes the next line of your code and repeats that process over and over.
@@ -81,12 +83,12 @@ The syntax is easy to understand and learn. It is easy to extend the language an
 
 This makes it very popular and a lot of programs and tools are written in python nowadays.
 
-## A word on python versions
+### A word on python versions
 
 For a long time python version 2.x was used but it was slowly replaced by python 3.
-While both versions are the same programming language, there are certain incompatible differences between them.
+While both versions belong to the same language family, there are certain incompatible differences between them.
 
-Python 2 was declared end of life years ago and thus everyone should have switched to python 3 already. This course will only cover python 3.
+As python 2 was declared end of life years ago, everyone should have switched to python 3 already. Thus this course will only cover python 3.
 
 If you're running an older version of your operating system, you still might have python 2 installed on your computer.
 
@@ -104,7 +106,7 @@ nomike@max:~$ python3 --version
 Python 3.10.7
 ```
 
-If `python3` gives you a "command not found" error message or something similar, you might want to consider updating your operating system. Or ask google or a friend for assistance.
+If `python3` gives you a "command not found" error message or something similar, you might want to consider updating your operating system. Or ask google or a friend for assistance as it will be hard following the remainder of this course if you are using python 2.
 
 ## Interactive
 
@@ -116,5 +118,7 @@ Python 3.10.7 (main, Nov 24 2022, 19:45:47) [GCC 12.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
+
+***Note:** You already used in interactive session for an interpreted programming language. Your shell. `bash`, the shell most commonly used in linux distributions nowadays, is an interpreter as well, just like python. It has a different syntax though and other major differences.*
 
 This is a great way to quickly test code and you will have the chance to try it out in the next [chapter](../2.1/) where you will have your first interactive python experience, which brings you very close you your first real python program.
