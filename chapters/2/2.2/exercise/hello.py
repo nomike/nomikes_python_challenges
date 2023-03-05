@@ -1,5 +1,1 @@
-name = input("Please enter your name: ")
-print("Hello, " + name + ". nice to meet you!")
-a = input("Please enter a number: ")
-b = input("Please enter another number: ")
-print("The sum of those numbers is " + str(int(a) + int(b)) + ".")
+print("hello, world")
