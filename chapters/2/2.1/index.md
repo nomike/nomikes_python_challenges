@@ -100,7 +100,7 @@ As programming drew a lot of inspiration from mathematics, most of the rules are
 
 ## A word on parentheses
 
-While there could be endless debates on social media about whether the answer to `8 / 2 * (2 + 2)` is 1 or 16, programming code should not be up for debate at all (try putting this into an interactive python session to get the right answer). Tp make code predictable and easy to understand it is advisable to use parentheses in this case:
+While there could be endless debates on social media about whether the answer to `8 / 2 * (2 + 2)` is 1 or 16, programming code should not be up for debate at all (try putting this into an interactive python session to get the right answer). To make code predictable and easy to understand it is advisable to use parentheses in this case:
 
 `(8 / 2) * (2 + 2)`
 
@@ -132,7 +132,7 @@ a = 10
 
 But in python rather than comparing whether the data stored in variable `a` equals 10, it will assign 10 to the variable.
 
-The way this was solved is to use two equals symbols for comparing things:
+The way this was solved, is to use two equals symbols for comparing things:
 
 ```python
 a == 10
@@ -249,6 +249,77 @@ If you divide a by b, modulo tells you the remainder of that division:
 ```
 
 12 equals 4 times 3 plus 0
+
+## Strong typing
+
+Python is a strongly typed language. That means that variables do have a type and that the type matters when performing operations on a variable.
+
+This will lead to an error for example:
+
+```python
+>>> "result" + 3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+```
+
+Some other programming languages are weakly typed, which means that the compiler/interpreter might just convert the `3` to a string `"3"` and append it to the other string. This happens implicitly behind the scenes and you might not be aware of if, which could cause all kinds of issues and bugs.
+
+Python follows the philosophy that things should be explicit. If you want something to happen, you have to program it.
+
+So the above example could be wtitten as:
+
+```python
+>>> "result" + str(3)
+'result3'
+```
+
+However, in this case, it is more likely you wanted to write this:
+
+```python
+>>> result + 3
+5
+```
+
+## Dynamic typing
+
+Despite being strongly typed, python is also dynamically typed. This means that the type of a variable is determined during runtime and not during programming.
+
+In Java for example you need write code like this:
+
+```java
+String hello = "Hello world!";
+int a = 5;
+Integer b = 6;
+
+hello = a;  // This will cause a compile error as a doesn't have the correct data type
+```
+
+In python you don't have to write data types for variables:
+
+```python
+hello = "Hello world!"
+a = 5
+b = 6
+
+hello = a   # This will work just fine
+```
+
+While the program is executed, the compiler does determine the type of the variable though, as you have seen above.
+
+Dynamic typing makes coding easier, less cumbersome and more flexible. It comes with the drawback however, that it's easier for you to mess things up as your IDE can't easily tell you, that you are using incompatible data types somewhere.
+
+A solution for this are type hints which have been introduced in python 3.5:
+
+```python
+a: int = 4
+name: str
+
+name = "nomike"
+a = "hello"
+```
+
+This program will execute without issues, python is still dynamically typed. But if you're using an IDE, it might point out that you might have an error in your code.
 
 ## Conclusion
 
