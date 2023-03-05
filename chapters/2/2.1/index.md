@@ -250,40 +250,9 @@ If you divide a by b, modulo tells you the remainder of that division:
 
 12 equals 4 times 3 plus 0
 
-## Strong typing
-
-Python is a strongly typed language. That means that variables do have a type and that the type matters when performing operations on a variable.
-
-This will lead to an error for example:
-
-```python
->>> "result" + 3
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: can only concatenate str (not "int") to str
-```
-
-Some other programming languages are weakly typed, which means that the compiler/interpreter might just convert the `3` to a string `"3"` and append it to the other string. This happens implicitly behind the scenes and you might not be aware of if, which could cause all kinds of issues and bugs.
-
-Python follows the philosophy that things should be explicit. If you want something to happen, you have to program it.
-
-So the above example could be wtitten as:
-
-```python
->>> "result" + str(3)
-'result3'
-```
-
-However, in this case, it is more likely you wanted to write this:
-
-```python
->>> result + 3
-5
-```
-
 ## Dynamic typing
 
-Despite being strongly typed, python is also dynamically typed. This means that the type of a variable is determined during runtime and not during programming.
+Python is dynamically typed. This means that the type of a variable is determined during runtime and not during programming.
 
 In Java for example you need write code like this:
 
@@ -305,7 +274,7 @@ b = 6
 hello = a   # This will work just fine
 ```
 
-While the program is executed, the compiler does determine the type of the variable though, as you have seen above.
+While the program is executed, the compiler does determine the type of the variable though.
 
 Dynamic typing makes coding easier, less cumbersome and more flexible. It comes with the drawback however, that it's easier for you to mess things up as your IDE can't easily tell you, that you are using incompatible data types somewhere.
 
@@ -320,6 +289,8 @@ a = "hello"
 ```
 
 This program will execute without issues, python is still dynamically typed. But if you're using an IDE, it might point out that you might have an error in your code.
+
+For the moment, we will progress without type hints and I will explain them in more detail in a later chapter.
 
 ## Conclusion
 

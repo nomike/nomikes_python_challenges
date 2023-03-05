@@ -53,26 +53,49 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "int") to str
 ```
 
-The first print statement was fine, but as can see at the second one, python throws an error. The important bit for now is the last line, which tells us about what went wrong.
+The first print statement was fine, but as you can see at the second one, python throws an error. The important bit for now is the last line, which tells us about what went wrong.
 
 Lets see what we can learn from it.
 
 It is a `TypeError`, so it looks that there is something wrong with the type of a variable.
 The description gives us more details: It complains about not being able to concatenate an integer to a string.
 
-It looks like the variable `a` is a string and not a number.
+What we have just discovered is, that apart from being dynamically typed, it is also strongly typed.
 
-This is hardly surprising. The `input` function asks the user to input something. This could be any text and does not necessarily have to be a number. So the data returned by it is a string.
+## Strong typing
 
-One of the core concepts of the python programming language is to be explicit. If something is not visible in the code, it usually isn't there. Other programming languages sometimes might try to do some guesswork here and assume, that when you have a string containing only numeric characters and want to add the number 2 to it, you want the string to be converted to a an integer first.
+Python is a strongly typed language. That means, that variables do have a type and that the type matters when performing operations on them.
 
-As this might lead to a lot of surprises in more complex code, python doesn't do that. If you deal with incompatible data types, it will just throw an error at you.
+As you have seen in the example above, python complained that it can't concatenate an integer to a string.
 
-So if you do want to have that string converted to an integer, you have to tell python to do so.
+```python
+>>> print(a + 2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+```
+
+Some programming languages are weakly typed, which means that the compiler/interpreter might just convert the `3` to a string `"3"` and append it to the other string. This happens implicitly behind the scenes and you might not be aware of if, which could cause all kinds of issues and bugs.
+
+Python, on the other hand, follows the philosophy that things should be explicit: If you want something to happen, you have to write it.
+
+Thus the code could be written as:
+
+```python
+>>> a + str(2)
+'122'
+```
+
+However, it is more likely you actually wanted to write this:
+
+```python
+>>> print(int(a) + 2)
+14
+```
 
 ## Converting variables
 
-Luckily there are built in functions which allow you to convert variables from one type to another:
+There are built in functions which allow you to convert variables from one type to another:
 
 ```python
 >>> a = "12"
