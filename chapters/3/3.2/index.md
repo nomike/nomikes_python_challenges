@@ -6,10 +6,10 @@ For this you often want to use loops.
 
 [TOC]
 
-## While loops
+## While-loops
 
 ```python
-number = -1 # initialized to -1 so that the while-condition could be evaluated
+number = -1 # initialized to -1 so that the while-condition evaluates to True and the user is asked at least once to enter a number
 
 while not (0 <= number <= 100):
     number = int(input("Please enter a number between 0 and 100: "))
@@ -35,10 +35,10 @@ while i < 10:
 
 If you run this code, you need to press ctrl-c to interrupt the program.
 
-## do-while loops
+## do-while-loops
 
 Sometimes you want to have a loop which runs at least once.
-Some other programming languages use do-while loops for this. In python, you just create an endless loop and break out of it once a certain condition is met. For this you can use the `break` keyword.
+Some other programming languages use do-while-loops for this. In python, you just create an endless loop and break out of it once a certain condition is met. For this you can use the `break` keyword.
 
 ## Break
 
@@ -52,7 +52,7 @@ while True:
         break
 ```
 
-The condition moved down to the `if` and it does no longer need to be negated. `number` doesn't have to be initialized with this arbitrarily chosen `-1` value.
+The condition moved down to the `if` and it does no longer need to be negated. `number` doesn't have to be initialized with the arbitrarily chosen `-1` value.
 
 ## Continue
 
@@ -68,9 +68,9 @@ while True:
     license_plates.append(car.license_plate)
 ```
 
-## For loops
+## For-loops
 
-While loops are great if you don't know how many items you want to loop over. If have a finit list of items however, you might want to use a for-loop instead:
+While-loops are great if you don't know how many items you want to loop over. If have a finit list of items however, you might want to use a for-loop instead:
 
 ```python
 colors = ["red", "yellow", "green", "blue"]
