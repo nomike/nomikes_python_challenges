@@ -4,7 +4,7 @@
 
 ## Be more friendly
 
-Your goal is to extend the [hello world program](hello.py.txt) to be more friendly. Instead of greeting the whole world, it should ask the user for their name and greet them specifically. The program should be stored in a script and executing it should look like this:
+Your goal is to extend the [hello world program](hello.txt) to be more friendly. Instead of greeting the whole world, it should ask the user for their name and greet them specifically. The program should be stored in a script and executing it should look like this:
 
 ```plaintext
 Please enter your name: nomike
@@ -23,7 +23,7 @@ The sum of those numbers is 4711.
 
 ## Solution
 
-When you're done, you could compare your code with the [solution](solution.py.txt).
+When you're done, you could compare your code with the [solution](solution.txt).
 Does your code look similar? Does it produce the same results as the example above?
 
 ## Invalid input
