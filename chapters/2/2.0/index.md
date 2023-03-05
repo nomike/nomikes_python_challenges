@@ -85,28 +85,23 @@ This makes it very popular and a lot of programs and tools are written in python
 
 ### A word on python versions
 
-For a long time python version 2.x was used but it was slowly replaced by python 3.
+For a long time python version 2.x was used, but it was slowly replaced by python 3.
 While both versions belong to the same language family, there are certain incompatible differences between them.
 
-As python 2 was declared end of life years ago, everyone should have switched to python 3 already. Thus this course will only cover python 3.
+As python 2 was declared end of life years ago, all major linux distributions first switched to python 3 as their default and later removed python 2.
 
-If you're running an older version of your operating system, you still might have python 2 installed on your computer.
+If you google stuff however, you might find old posts on stackoverflow and the likes which are based on python 2 and might not directly run on you modern python version.
 
-You can check this with the `--version` parameter of the python command:
+Just be aware of that.
+
+For most programs it is relatively easy to convert them to python 3 once you have more knowledge about the language.
+
+You can check the version of python on your system with the `--version` parameter:
 
 ```plaintext
 nomike@max:~$ python --version
 Python 3.10.7
 ```
-
-If it shows a 2.7 version for you, you could try executing python3 directly:
-
-```plaintext
-nomike@max:~$ python3 --version
-Python 3.10.7
-```
-
-If `python3` gives you a "command not found" error message or something similar, you might want to consider updating your operating system. Or ask google or a friend for assistance as it will be hard following the remainder of this course if you are using python 2.
 
 ## Interactive
 
