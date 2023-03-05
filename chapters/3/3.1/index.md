@@ -44,7 +44,7 @@ filename = input("Which file do you want to delete? ")
 
 ## Strings are lists as well
 
-As mentioned in [chapter 2.1](../../2/2.0/), strings are (almost) like a list of characters. Individual characters could be selected as with any list:5
+As mentioned in [chapter 2.1](../../2/2.0/), strings are (almost) like a list of characters. Individual characters could be selected as with any list:
 
 ```python
 print("Hello"[1]) # e
@@ -112,7 +112,7 @@ Now that looks weird.
 
 What happened, is that python just took the value of `new_cities`, which is a list, and appended it as a new element to our list of cities.
 
-What we actually wanted to do is to extend our list of cities with the elements inside the other list. We can just tell python to do so:
+What we actually wanted to do, is to extend our list of cities with the elements inside the other list. We can just tell python to do so:
 
 ```python
 cities = ["Vienna", "London", "Paris"]
