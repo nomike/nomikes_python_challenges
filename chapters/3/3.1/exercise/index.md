@@ -49,4 +49,4 @@ How long is the string "The quick brown fox jumps over the lazy dog"?
 
 ## Next chapter
 
-Coming right up: [chapter 3.2](../3.2/) which explains loops and contains.
+Coming right up: [chapter 3.2](../../3.2/) which explains loops and contains.
