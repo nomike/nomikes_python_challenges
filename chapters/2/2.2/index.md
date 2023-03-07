@@ -8,13 +8,13 @@ Everything we've done in python so far, we did in an interactive python session.
 
 To prevent this, you could store your code in a file and tell python to read the instructions from that file instead of prompting you.
 
-You can use any editor for this, but for the beginning I recommend using `nano` as it's one of the easiest to use
+You can use any editor for this, but for the beginning I recommend using `nano`, as it's one of the easiest to use.
 
 I will assume that you are familiar enough with editors and general shell usage. If you are unsure, please refer back to [chapter 1](../../1/) for details.
 
 ## Hello, world
 
-A simple program to start with is the common hello world, which I introduced in the previous chapter:
+A simple program to start with, is the common hello world, which I introduced in the previous chapter:
 
 ```python
 print('hello, world')
@@ -60,11 +60,11 @@ Lets see what we can learn from it.
 It is a `TypeError`, so it looks that there is something wrong with the type of a variable.
 The description gives us more details: It complains about not being able to concatenate an integer to a string.
 
-What we have just discovered is, that apart from being dynamically typed, it is also strongly typed.
+What we have just discovered is, that apart from being dynamically typed, python is also strongly typed.
 
 ## Strong typing
 
-Python is a strongly typed language. That means, that variables do have a type and that the type matters when performing operations on them.
+Python is a strongly typed language. That means, that variables do have a type and that that type matters when performing operations on them.
 
 As you have seen in the example above, python complained that it can't concatenate an integer to a string.
 
@@ -82,7 +82,7 @@ Python, on the other hand, follows the philosophy that things should be explicit
 Thus the code could be written as:
 
 ```python
->>> a + str(2)
+>>> print(a + str(2))
 '122'
 ```
 
