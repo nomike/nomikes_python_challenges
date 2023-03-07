@@ -16,7 +16,7 @@ As you can see in the example above, the python interpreter prints some informat
 
 It tells you how to get help, the copyright message and so on. And then it waits for you to enter commands by displaying a prompt.
 
-That prompt is the same concept as with your shell but instead of `nomike@max:~$` it simply is `>>>`.
+That prompt is the same concept as with your shell but instead of `nomike@max:~$ ` it simply is `>>>`.
 
 On this prompt you can do simple calculations. For example:
 
@@ -38,7 +38,7 @@ You can use other mathematical operators and even brackets:
 
 ## Exiting the interpreter
 
-Before you continue to read try to think of what your approach of exiting this interactive python session would be.
+Before you continue to read, try to think of what your approach of exiting this interactive python session would be.
 
 You've already learned, that you can exit your shell with the `exit` command.
 An interactive python session is essentially just another shell so lets try using `exit`:
@@ -49,13 +49,13 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 >>> exit()
 ```
 
-Python really tries to be helpful and beginner friendly and politely tells you that in order to exit you either need to use the `exit()` command or press Ctrl-D on your keyboard. I just used the "exit()" command to return back to my shell.
+Python really tries to be helpful and beginner-friendly and politely tells you that in order to exit you either need to use the `exit()` command or press Ctrl-D on your keyboard. I just used the "exit()" command to return back to my shell.
 
 ***Tip:** If you are in the shell, you can exit it with Ctrl-D as well, that's a nice bit of consistency!*
 
 ## Printing text to the terminal
 
-Adding numbers quickly gets boring. Let's do what all programmers to in their first ever program: Let's greet the world!
+Adding numbers quickly gets boring. Let's do, what all programmers do in their first ever program: Let's greet the world!
 
 ```plaintext
 >>> print("hello, world")
@@ -63,13 +63,13 @@ hello, world
 ```
 
 Not surprisingly, this has the effect of printing the text "hello, world" to your screen.
-What happens is, that a function called "print" is called and the parameter "hello, world" is given to it. This function then somehow takes care of sending the text to the terminal which then takes care of displaying it on your screen.
+What happens is, that a function called "print" is called and the parameter "hello, world" is given to it. This function then somehow takes care of sending the text to the terminal, which then takes care of displaying it on your screen.
 
-The python interpreter converts all of this this into a big amount of machine code which is then executed by the CPU and at some point you end up with the text "hello, world" on your terminal.
+The python interpreter converts all of this this into a big chunk of machine code, which is then executed by the CPU, and at some point you end up with the text "hello, world" on your terminal.
 
 ## Functions
 
-Functions, like `print` are similar to functions in in mathematics e.g. "f(x) = 2 * x".
+Functions in python are similar to functions in in mathematics e.g. "f(x) = 2 * x".
 In python that function would look like this:
 
 ```python
@@ -110,9 +110,9 @@ Now it's much more obvious what's happening.
 
 Basic operators look a bit different then what you're used to. The symbols for addition and subtraction are as you'd expect: `+` and `-`.
 
-For Multiplication however, you will realize that the common math symbol could not be found on your computer keyboard. While modern computers could use and display the multiplication dot (`⋅`) it is not used in programming and most programming  languages use a simple star `*` for that.
+For Multiplication however, you will realize that the common math symbol for that could not be found on your computer keyboard. While modern computers could use and display the multiplication dot (`⋅`) it is not used in programming and most programming languages adopted a simple star `*` for that.
 
-The same applies to division where the common symbol `÷` was substituted by a forward slash `/`.
+The same applies to division where the division symbol `÷` was substituted by a forward slash `/`.
 
 ## Assignment
 
@@ -174,7 +174,7 @@ Numbers with fractions are called floats and they look like this:
 -.14
 ```
 
-As you can see, the `0` before the comma could be omitted, but in my opinion it makes the code less readable so you should better include it.
+As you can see, the `0` before the comma could be omitted, but in my opinion it makes the code less readable, so you should better include it.
 
 ### Characters
 
@@ -223,17 +223,25 @@ False
 
 ## The nothing
 
-The value of variable could be nothing. That's different to `0` for example, which is something. The keyword for nothing used in python is `None`.
+The value of variable could be nothing. That's different to `0` for example, which is something.
+
+> (Pyornkrachzark) Near my home, there used to be a beautiful lake, but then... then it was gone.
+> (Gluckuk) Did the lake dry up?
+> (Pyornkrachzark) No. It just wasn't there anymore. Nothing was there anymore. Not even a dried-up lake.
+> (Gluckuk) A hole?
+> (Pyornkrachzark) A hole would be something. No, it was Nothing.
+
+The keyword for nothing used in python is `None`.
 
 ```python
 a = None
 ```
 
-You can use it in case you don't know the value yet or if it is not defined.
+You can use it in case you don't know a value yet or if it is not defined.
 
 ## Modulo
 
-Module is an operator which you might not have heard of yet as it's not commonly used in mathematics.
+Module is an operator which you might not have heard of yet, as it's not commonly used in mathematics.
 It gives you the remainder of an integer division. The symbol used for this is `%`.
 
 If you divide a by b, modulo tells you the remainder of that division:
@@ -242,7 +250,7 @@ If you divide a by b, modulo tells you the remainder of that division:
 5 % 2 == 1
 ```
 
-5 equals 2 times 2 plus 1
+Or spelled out: 5 equals 2 times 2 plus 1
 
 ```python
 12 % 3 == 0
@@ -276,9 +284,9 @@ hello = a   # This will work just fine
 
 While the program is executed, the compiler does determine the type of the variable though.
 
-Dynamic typing makes coding easier, less cumbersome and more flexible. It comes with the drawback however, that it's easier for you to mess things up as your IDE can't easily tell you, that you are using incompatible data types somewhere.
+Dynamic typing makes coding easier, less cumbersome and more flexible. It comes with the drawback however, that it's easier for you to mess things up, as your IDE can't easily wan you when you are using incompatible data types somewhere.
 
-A solution for this are type hints which have been introduced in python 3.5:
+A solution for this are type hints, which have been introduced in python 3.5:
 
 ```python
 a: int = 4
