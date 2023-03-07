@@ -97,3 +97,5 @@ To reset the terminal to a usable state, simply use the `reset` command.
 This will clear the screen, and you will be presented with a nice looking prompt.
 
 Go give it a try!
+
+When you're done playing around with editors, head over to [chapter 2](../../2/) where you will start with your very first python program.
