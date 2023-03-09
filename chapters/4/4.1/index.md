@@ -33,8 +33,8 @@ error: This revision of snap "code" was published using classic confinement and 
 For the moment, just trust me on this, that this is safe and you can just use the `--classic` parameter as advised to install vscode:
 
 ```plaintext
-nomike@max:~$ sudo snap install vscode --classic
-vscode 1.76.0 from Microsoft installed
+nomike@max:~$ sudo snap install code --classic
+code 5e805b79 from Visual Studio Code (vscode/) installed
 ```
 
 ### The python extension
