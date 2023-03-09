@@ -226,13 +226,13 @@ False
 The value of variable could be nothing. That's different to `0` for example, which is something.
 
 > (Pyornkrachzark) Near my home, there used to be a beautiful lake, but then... then it was gone.
-> 
+>
 > (Gluckuk) Did the lake dry up?
-> 
+>
 > (Pyornkrachzark) No. It just wasn't there anymore. Nothing was there anymore. Not even a dried-up lake.
-> 
+>
 > (Gluckuk) A hole?
-> 
+>
 > (Pyornkrachzark) A hole would be something. No, it was Nothing.
 
 The keyword for nothing used in python is `None`.
