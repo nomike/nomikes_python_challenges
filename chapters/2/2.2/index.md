@@ -25,7 +25,7 @@ Create a file named `hello.py` and put the above print-statement in it.
 Once your file is saved and you are back at the shell, you could use python to run your script:
 
 ```plaintext
-$ python hello.py
+$ python3 hello.py
 hello, world
 ```
 
@@ -42,7 +42,7 @@ You can concatenate a string to another one by using the `+` operator:
 
 The function `input()` requests the user to enter a value.
 
-```python
+```python3
 >>> a = input("Please enter a number: ")
 Please enter a number: 12
 >>> print(a)

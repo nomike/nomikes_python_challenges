@@ -7,7 +7,7 @@
 In your terminal start python:
 
 ```plaintext
-nomike@max:~$ python
+nomike@max:~$ python3
 Python 3.10.7 (main, Nov 24 2022, 19:45:47) [GCC 12.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> ```

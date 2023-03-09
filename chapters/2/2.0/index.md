@@ -99,7 +99,7 @@ For most programs it is relatively easy to convert them to python 3 once you hav
 You can check the version of python on your system with the `--version` parameter:
 
 ```plaintext
-nomike@max:~$ python --version
+nomike@max:~$ python3 --version
 Python 3.10.7
 ```
 
