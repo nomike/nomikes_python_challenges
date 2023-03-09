@@ -41,6 +41,10 @@ code 5e805b79 from Visual Studio Code (vscode/) installed
 
 In vscode, you should install the python extension. For information on how to do that refer to the [section about installing vscode in Windows](#installing-vscode-in-windows-subsystem-for-linux) earlier in this chapter.
 
+### pylance
+
+You also should install the "pylance" extension. This enables vscode to point out errors in your source code for example.
+
 ### A few helpful tips to get you started
 
 When you open vscode you will see a welcome page. I highly recommend reading some of the walkthroughs.
