@@ -1,4 +1,4 @@
-# Chapter 2.2 - Scripts, user input and how to make your life easier
+# Chapter 2.2 - Scripts, user input
 
 [TOC]
 
