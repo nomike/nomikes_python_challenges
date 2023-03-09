@@ -68,9 +68,9 @@ while True:
     license_plates.append(car.license_plate)
 ```
 
-## For-loops
+## For-each-loops
 
-While-loops are great if you don't know how many items you want to loop over. If have a finit list of items however, you might want to use a for-loop instead:
+While-loops are great if you don't know how many items you want to loop over. If have a finit list of items however, you might want to use a for-each-loop instead:
 
 ```python
 colors = ["red", "yellow", "green", "blue"]
@@ -98,6 +98,8 @@ range(3, 5)      # [3, 4]
 range(0, 10, 2)  # [0, 2, 4, 6, 8]
 range(10, 0, -1) # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 ```
+
+## For-loops with a predefined number of runs
 
 The `range` function comes in handy when you want a loop to be executed a fixed number of times:
 
